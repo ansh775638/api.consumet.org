@@ -4,7 +4,7 @@ import { StreamingServers, SubOrSub } from '@consumet/extensions/dist/models';
 
 const routes = async (fastify: FastifyInstance, options: RegisterOptions) => {
   const zoro = new ANIME.Zoro(process.env.ZORO_URL);
-  let baseUrl = 'https://kaido.to';
+  let baseUrl = 'https://www.hianimes.to';
   if (process.env.ZORO_URL) {
     baseUrl = `https://${process.env.ZORO_URL}`;
   }
